@@ -1,0 +1,31 @@
+PODS:
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - LetterAvatarKit (1.2.3)
+
+DEPENDENCIES:
+  - ChameleonFramework/Swift (from `https://github.com/wowansm/Chameleon`, branch `swift5`)
+  - LetterAvatarKit (= 1.2.3)
+
+SPEC REPOS:
+  trunk:
+    - LetterAvatarKit
+
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :branch: swift5
+    :git: https://github.com/wowansm/Chameleon
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: 96d52c36a45847fff60bcff7a58fec1e4bd7390b
+    :git: https://github.com/wowansm/Chameleon
+
+SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  LetterAvatarKit: f1c77efaae125a6f39e15210847eeefed57ad204
+
+PODFILE CHECKSUM: 85cae4f0a7ffbb56c2f3a69ca4085da1fbe39af0
+
+COCOAPODS: 1.9.3

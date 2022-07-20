@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="MergeDetailSelectTableViewCell" customModule="PhoneContacts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXu-tR-i1k">
+                        <rect key="frame" x="76" y="18" width="180" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbL-kL-QlL">
+                        <rect key="frame" x="76" y="47" width="180" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UeO-C9-G2G">
+                        <rect key="frame" x="16" y="18" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="Guc-Bp-q8p"/>
+                            <constraint firstAttribute="height" constant="44" id="ITT-wb-s5b"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="V9H-nM-ZvG">
+                        <rect key="frame" x="272" y="24.5" width="32" height="31"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="9Is-hq-3Kt"/>
+                            <constraint firstAttribute="height" constant="32" id="agf-SE-fb9"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zns-Wr-tBE" customClass="CustomImageCircular" customModule="PhoneContacts" customModuleProvider="target">
+                        <rect key="frame" x="42" y="44.5" width="22" height="22"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="myQ-pO-cC4"/>
+                            <constraint firstAttribute="width" constant="22" id="yBJ-oj-5nf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isImageCircular" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V9H-nM-ZvG" firstAttribute="leading" secondItem="MbL-kL-QlL" secondAttribute="trailing" constant="16" id="5zJ-9r-Im1"/>
+                    <constraint firstItem="MbL-kL-QlL" firstAttribute="top" secondItem="LXu-tR-i1k" secondAttribute="bottom" constant="8" symbolic="YES" id="BsE-KE-ijW"/>
+                    <constraint firstItem="zns-Wr-tBE" firstAttribute="leading" secondItem="UeO-C9-G2G" secondAttribute="trailing" constant="-18" id="Foo-pm-EMR"/>
+                    <constraint firstItem="LXu-tR-i1k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="J4k-Ln-XKb"/>
+                    <constraint firstItem="zns-Wr-tBE" firstAttribute="top" secondItem="UeO-C9-G2G" secondAttribute="bottom" constant="-18" id="L6c-Zv-Bhw"/>
+                    <constraint firstAttribute="trailing" secondItem="V9H-nM-ZvG" secondAttribute="trailing" constant="16" id="O4J-pL-3Qo"/>
+                    <constraint firstItem="UeO-C9-G2G" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SXf-ai-cop"/>
+                    <constraint firstItem="UeO-C9-G2G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="UJR-as-O9e"/>
+                    <constraint firstItem="LXu-tR-i1k" firstAttribute="leading" secondItem="UeO-C9-G2G" secondAttribute="trailing" constant="16" id="ccM-5v-XF9"/>
+                    <constraint firstItem="V9H-nM-ZvG" firstAttribute="leading" secondItem="LXu-tR-i1k" secondAttribute="trailing" constant="16" id="juW-aI-60k"/>
+                    <constraint firstItem="MbL-kL-QlL" firstAttribute="leading" secondItem="UeO-C9-G2G" secondAttribute="trailing" constant="16" id="mJb-eW-zvN"/>
+                    <constraint firstItem="V9H-nM-ZvG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tjV-hh-bHc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="detailLabel" destination="MbL-kL-QlL" id="Z1W-Y0-Gy1"/>
+                <outlet property="infoImageView" destination="V9H-nM-ZvG" id="bki-gD-lwC"/>
+                <outlet property="titleLabel" destination="LXu-tR-i1k" id="hcc-0q-jD0"/>
+                <outlet property="userCheckedImageView" destination="zns-Wr-tBE" id="lA1-FO-NPl"/>
+                <outlet property="userImage" destination="UeO-C9-G2G" id="xdh-GE-LOx"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="148.66071428571428"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="zns-Wr-tBE">
+            <size key="intrinsicContentSize" width="20" height="20"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

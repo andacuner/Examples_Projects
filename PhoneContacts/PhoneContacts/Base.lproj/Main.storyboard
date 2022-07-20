@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Us-->
+        <scene sceneID="Z05-Bh-GrT">
+            <objects>
+                <viewController id="hes-op-9yr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ENe-wa-HYB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contacts" translatesAutoresizingMaskIntoConstraints="NO" id="wI4-fR-mb8">
+                                <rect key="frame" x="64" y="368" width="286" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="In8-QC-sTq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts v0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjr-EH-l4s">
+                                <rect key="frame" x="16" y="560" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VTv-RY-iOy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VTv-RY-iOy" firstAttribute="trailing" secondItem="wI4-fR-mb8" secondAttribute="trailing" constant="64" id="4gP-nV-Skx"/>
+                            <constraint firstItem="VTv-RY-iOy" firstAttribute="trailing" secondItem="kjr-EH-l4s" secondAttribute="trailing" constant="16" id="PmU-4j-5pE"/>
+                            <constraint firstItem="kjr-EH-l4s" firstAttribute="leading" secondItem="VTv-RY-iOy" secondAttribute="leading" constant="16" id="R6I-1v-ri0"/>
+                            <constraint firstItem="kjr-EH-l4s" firstAttribute="top" secondItem="wI4-fR-mb8" secondAttribute="bottom" constant="32" id="chp-wT-F3B"/>
+                            <constraint firstItem="wI4-fR-mb8" firstAttribute="leading" secondItem="VTv-RY-iOy" secondAttribute="leading" constant="64" id="p9E-gB-BN6"/>
+                            <constraint firstItem="wI4-fR-mb8" firstAttribute="centerY" secondItem="ENe-wa-HYB" secondAttribute="centerY" id="uQD-z3-mOd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Us" id="luc-Gu-H1d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxb-tk-ng9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2028.985507246377" y="-510.26785714285711"/>
+        </scene>
+        <!--Access Selected View Controller-->
+        <scene sceneID="cHT-cO-mQ6">
+            <objects>
+                <viewController storyboardIdentifier="AccessSelectedViewController" id="OF5-3V-osa" customClass="AccessSelectedViewController" customModule="PhoneContacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pBg-u5-w0B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access to contacts " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtF-U2-87N">
+                                <rect key="frame" x="16" y="76" width="382" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You must first allow access to contacts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSe-b5-08i">
+                                <rect key="frame" x="16" y="108" width="382" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpT-lh-t0N" customClass="CustomButtonWithRadiusAndShadow" customModule="PhoneContacts" customModuleProvider="target">
+                                <rect key="frame" x="64" y="801" width="286" height="45"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Mlh-R7-Ea7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Access to contacts">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkAccessFunc:" destination="OF5-3V-osa" eventType="touchUpInside" id="wh7-Wb-7cu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contacts" translatesAutoresizingMaskIntoConstraints="NO" id="Rex-uS-tIw">
+                                <rect key="frame" x="64" y="368" width="286" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="KB1-xT-wLn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MjH-bK-SpU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MjH-bK-SpU" firstAttribute="bottom" secondItem="HpT-lh-t0N" secondAttribute="bottom" constant="16" id="4aO-26-ggr"/>
+                            <constraint firstItem="VtF-U2-87N" firstAttribute="leading" secondItem="MjH-bK-SpU" secondAttribute="leading" constant="16" id="A1C-44-WTZ"/>
+                            <constraint firstItem="Rex-uS-tIw" firstAttribute="centerY" secondItem="pBg-u5-w0B" secondAttribute="centerY" id="HBr-iy-G5m"/>
+                            <constraint firstItem="MjH-bK-SpU" firstAttribute="trailing" secondItem="kSe-b5-08i" secondAttribute="trailing" constant="16" id="LLG-6W-XhL"/>
+                            <constraint firstItem="MjH-bK-SpU" firstAttribute="trailing" secondItem="HpT-lh-t0N" secondAttribute="trailing" constant="64" id="VeU-Iq-qli"/>
+                            <constraint firstItem="HpT-lh-t0N" firstAttribute="leading" secondItem="MjH-bK-SpU" secondAttribute="leading" constant="64" id="W2V-ZJ-TZR"/>
+                            <constraint firstItem="kSe-b5-08i" firstAttribute="top" secondItem="VtF-U2-87N" secondAttribute="bottom" constant="8" id="c8Z-5f-N9D"/>
+                            <constraint firstItem="kSe-b5-08i" firstAttribute="leading" secondItem="MjH-bK-SpU" secondAttribute="leading" constant="16" id="fsr-8b-OLp"/>
+                            <constraint firstItem="MjH-bK-SpU" firstAttribute="trailing" secondItem="Rex-uS-tIw" secondAttribute="trailing" constant="64" id="gma-cs-5gu"/>
+                            <constraint firstItem="Rex-uS-tIw" firstAttribute="leading" secondItem="MjH-bK-SpU" secondAttribute="leading" constant="64" id="hnJ-YF-MR1"/>
+                            <constraint firstItem="MjH-bK-SpU" firstAttribute="trailing" secondItem="VtF-U2-87N" secondAttribute="trailing" constant="16" id="ikC-7Z-0bx"/>
+                            <constraint firstItem="VtF-U2-87N" firstAttribute="top" secondItem="MjH-bK-SpU" secondAttribute="top" constant="32" id="wl7-DI-3sg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7o-NN-ChR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2987" y="-1331"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="PhoneContacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j8L-tE-V6X">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j8L-tE-V6X" secondAttribute="trailing" id="0Tk-Jc-7Qw"/>
+                            <constraint firstItem="j8L-tE-V6X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8AP-a4-oOP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j8L-tE-V6X" secondAttribute="bottom" id="JOe-ub-ecP"/>
+                            <constraint firstItem="j8L-tE-V6X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qCg-BZ-w55"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contactsTableView" destination="j8L-tE-V6X" id="7mH-7n-IT0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="521.73913043478262" y="-663.61607142857144"/>
+        </scene>
+        <!--Base Tabbar View Controller-->
+        <scene sceneID="Iu9-Tr-ZIf">
+            <objects>
+                <tabBarController storyboardIdentifier="BaseTabbarViewController" id="igf-CP-KFw" customClass="BaseTabbarViewController" customModule="PhoneContacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FqZ-OG-FxC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LGM-ya-bXY" kind="relationship" relationship="viewControllers" id="Igg-gN-LdP"/>
+                        <segue destination="g0k-Up-np4" kind="relationship" relationship="viewControllers" id="YlJ-6L-E5H"/>
+                        <segue destination="sT1-4f-DvM" kind="relationship" relationship="viewControllers" id="4qO-4V-MIK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcV-7B-LpX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2939" y="238"/>
+        </scene>
+        <!--Merge Contacts-->
+        <scene sceneID="2eX-md-mlG">
+            <objects>
+                <viewController storyboardIdentifier="MainMergeViewController" id="PFA-Yk-nTK" customClass="MainMergeViewController" customModule="PhoneContacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vKP-l4-4U9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show possible joins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUW-CG-FbI">
+                                <rect key="frame" x="16" y="435.5" width="382" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.merge" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dCR-ss-ZDx">
+                                <rect key="frame" x="87" y="272" width="240" height="123.5"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="zxR-i5-Ixt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTA-BY-YpV">
+                                <rect key="frame" x="101" y="657" width="213" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="clickAction:" destination="PFA-Yk-nTK" eventType="touchUpInside" id="PD5-zL-c3U"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Possible Merges" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJl-ve-lxp">
+                                <rect key="frame" x="16" y="714" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VmU-yU-0hS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VmU-yU-0hS" firstAttribute="trailing" secondItem="WUW-CG-FbI" secondAttribute="trailing" constant="16" id="4sd-R3-xlp"/>
+                            <constraint firstItem="WUW-CG-FbI" firstAttribute="top" secondItem="dCR-ss-ZDx" secondAttribute="bottom" constant="37" id="Iv0-JC-Oov"/>
+                            <constraint firstItem="VmU-yU-0hS" firstAttribute="trailing" secondItem="wTA-BY-YpV" secondAttribute="trailing" constant="100" id="JO8-7L-viA"/>
+                            <constraint firstItem="yJl-ve-lxp" firstAttribute="leading" secondItem="VmU-yU-0hS" secondAttribute="leading" constant="16" id="Lbj-Gj-LG7"/>
+                            <constraint firstItem="VmU-yU-0hS" firstAttribute="trailing" secondItem="dCR-ss-ZDx" secondAttribute="trailing" constant="87" id="Lmt-1N-gdG"/>
+                            <constraint firstItem="VmU-yU-0hS" firstAttribute="trailing" secondItem="yJl-ve-lxp" secondAttribute="trailing" constant="16" id="QIS-NR-A20"/>
+                            <constraint firstItem="dCR-ss-ZDx" firstAttribute="leading" secondItem="VmU-yU-0hS" secondAttribute="leading" constant="87" id="Sti-z7-2MY"/>
+                            <constraint firstItem="WUW-CG-FbI" firstAttribute="leading" secondItem="VmU-yU-0hS" secondAttribute="leading" constant="16" id="aDw-WH-47J"/>
+                            <constraint firstItem="yJl-ve-lxp" firstAttribute="top" secondItem="wTA-BY-YpV" secondAttribute="bottom" constant="16" id="hwC-Wi-ftb"/>
+                            <constraint firstItem="wTA-BY-YpV" firstAttribute="leading" secondItem="VmU-yU-0hS" secondAttribute="leading" constant="101" id="oNr-xf-N7O"/>
+                            <constraint firstItem="WUW-CG-FbI" firstAttribute="centerY" secondItem="vKP-l4-4U9" secondAttribute="centerY" id="q9T-VP-ouQ"/>
+                            <constraint firstItem="VmU-yU-0hS" firstAttribute="bottom" secondItem="yJl-ve-lxp" secondAttribute="bottom" constant="78" id="zBb-b9-sB0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Merge" image="arrow.triangle.merge" catalog="system" id="eTe-ar-08L"/>
+                    <navigationItem key="navigationItem" title="Merge Contacts" id="xOQ-jx-NYq"/>
+                    <connections>
+                        <outlet property="numberOfMergesButton" destination="wTA-BY-YpV" id="mVR-Vp-RHB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boL-9B-ohZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2075.36231884058" y="1002.4553571428571"/>
+        </scene>
+        <!--Possible Merges-->
+        <scene sceneID="9Ys-7o-DTP">
+            <objects>
+                <viewController storyboardIdentifier="MergeDetailViewController" id="GyE-9U-9BN" customClass="MergeDetailViewController" customModule="PhoneContacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yb2-eM-0pD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PmR-kM-rbH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tCO-6T-Vcj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PmR-kM-rbH" firstAttribute="top" secondItem="tCO-6T-Vcj" secondAttribute="top" id="1Rz-4i-M3x"/>
+                            <constraint firstItem="PmR-kM-rbH" firstAttribute="leading" secondItem="tCO-6T-Vcj" secondAttribute="leading" id="1uL-li-LAn"/>
+                            <constraint firstItem="tCO-6T-Vcj" firstAttribute="trailing" secondItem="PmR-kM-rbH" secondAttribute="trailing" id="I6h-e9-vpl"/>
+                            <constraint firstItem="tCO-6T-Vcj" firstAttribute="bottom" secondItem="PmR-kM-rbH" secondAttribute="bottom" id="Ubf-52-LOd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Possible Merges" id="kXl-cJ-NDe"/>
+                    <connections>
+                        <outlet property="mergeTableView" destination="PmR-kM-rbH" id="aNO-SR-5HG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AV-k2-4ck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2075.36231884058" y="1717.6339285714284"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="8t5-gb-Y13">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LGM-ya-bXY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.fill" catalog="system" id="4KY-6j-thh">
+                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yU8-J4-3K2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tTM-HL-NOZ" kind="relationship" relationship="rootViewController" id="ppL-rC-EEW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AwA-P4-0pa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1286.9565217391305" y="238.39285714285714"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="ixx-SD-JI0">
+            <objects>
+                <viewController storyboardIdentifier="MainMenuViewController" id="tTM-HL-NOZ" customClass="MainMenuViewController" customModule="PhoneContacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MeS-4B-2La">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dJK-ef-hRE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1GO-Dh-cb2"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1GO-Dh-cb2" firstAttribute="trailing" secondItem="dJK-ef-hRE" secondAttribute="trailing" id="9Nc-f4-Yca"/>
+                            <constraint firstItem="dJK-ef-hRE" firstAttribute="top" secondItem="1GO-Dh-cb2" secondAttribute="top" id="Qqo-QZ-DY9"/>
+                            <constraint firstItem="dJK-ef-hRE" firstAttribute="leading" secondItem="1GO-Dh-cb2" secondAttribute="leading" id="XCC-fD-tBQ"/>
+                            <constraint firstItem="1GO-Dh-cb2" firstAttribute="bottom" secondItem="dJK-ef-hRE" secondAttribute="bottom" id="nsu-wK-A6y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contacts" id="9Bm-zI-Q06"/>
+                    <connections>
+                        <outlet property="mainMenuTableView" destination="dJK-ef-hRE" id="DV7-Gn-CAg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HXd-sS-bRg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="238"/>
+        </scene>
+        <!--Detail List View Controller-->
+        <scene sceneID="4Q6-ts-gR3">
+            <objects>
+                <viewController storyboardIdentifier="DetailListViewController" id="Lnn-YF-DCI" customClass="DetailListViewController" customModule="PhoneContacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="esM-BF-rZ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="94C-hb-LyC">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CMX-yF-Uio"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="94C-hb-LyC" firstAttribute="top" secondItem="CMX-yF-Uio" secondAttribute="top" id="AfD-jx-xtC"/>
+                            <constraint firstItem="CMX-yF-Uio" firstAttribute="bottom" secondItem="94C-hb-LyC" secondAttribute="bottom" id="S3S-SW-KMR"/>
+                            <constraint firstItem="94C-hb-LyC" firstAttribute="leading" secondItem="CMX-yF-Uio" secondAttribute="leading" id="Udf-lj-tvg"/>
+                            <constraint firstItem="CMX-yF-Uio" firstAttribute="trailing" secondItem="94C-hb-LyC" secondAttribute="trailing" id="YXd-nm-vli"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LpS-fE-C7u"/>
+                    <connections>
+                        <outlet property="detailTableCell" destination="94C-hb-LyC" id="8CU-F6-yes"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uiv-JC-vLd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1736.2318840579712" y="237.72321428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qee-CA-hRp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QVR-rm-pwg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eMO-RS-WyH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lnn-YF-DCI" kind="relationship" relationship="rootViewController" id="lbC-6L-6Gf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1P-gQ-Sg6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.63768115942037" y="237.72321428571428"/>
+        </scene>
+        <!--Detail Complete View Controller-->
+        <scene sceneID="ZXP-br-Lv5">
+            <objects>
+                <viewController storyboardIdentifier="DetailCompleteViewController" id="F5Z-Hl-yza" customClass="DetailCompleteViewController" customModule="PhoneContacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iBF-gD-jbh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Ez-ow-TzW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jJo-i7-xdT"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Ez-ow-TzW" firstAttribute="top" secondItem="jJo-i7-xdT" secondAttribute="top" id="6kp-pW-ka6"/>
+                            <constraint firstItem="jJo-i7-xdT" firstAttribute="trailing" secondItem="5Ez-ow-TzW" secondAttribute="trailing" id="Nrg-c4-Yet"/>
+                            <constraint firstItem="5Ez-ow-TzW" firstAttribute="leading" secondItem="jJo-i7-xdT" secondAttribute="leading" id="iw7-8w-Wtr"/>
+                            <constraint firstItem="jJo-i7-xdT" firstAttribute="bottom" secondItem="5Ez-ow-TzW" secondAttribute="bottom" id="p3G-lZ-qQp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Y1-GB-aos"/>
+                    <connections>
+                        <outlet property="detailCompleteTableView" destination="5Ez-ow-TzW" id="sYE-5d-Qub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQc-7A-ysn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2644.9275362318845" y="941.51785714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZJa-fC-rhf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LJl-bK-byo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XRB-Hp-wdk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="F5Z-Hl-yza" kind="relationship" relationship="rootViewController" id="0bL-Uc-1Av"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ipd-Xq-Y6H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734.7826086956522" y="941.51785714285711"/>
+        </scene>
+        <!--Merge Contacts-->
+        <scene sceneID="4J8-5k-Zqv">
+            <objects>
+                <viewController storyboardIdentifier="MergeViewController" id="892-mG-tFg" customClass="MergeViewController" customModule="PhoneContacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1a5-0i-aMD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u4W-tb-HsI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dEk-WY-dmO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u4W-tb-HsI" firstAttribute="leading" secondItem="dEk-WY-dmO" secondAttribute="leading" id="6Uz-P5-TUS"/>
+                            <constraint firstItem="dEk-WY-dmO" firstAttribute="trailing" secondItem="u4W-tb-HsI" secondAttribute="trailing" id="LBn-d7-PcF"/>
+                            <constraint firstItem="dEk-WY-dmO" firstAttribute="bottom" secondItem="u4W-tb-HsI" secondAttribute="bottom" id="Qz2-AH-8PE"/>
+                            <constraint firstItem="u4W-tb-HsI" firstAttribute="top" secondItem="dEk-WY-dmO" secondAttribute="top" id="m6w-At-SX7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Merge Contacts" id="4h7-Yu-IBO"/>
+                    <connections>
+                        <outlet property="mergeTableView" destination="u4W-tb-HsI" id="RdA-xF-SY9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyv-lc-qe9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2644.9275362318845" y="1738.3928571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZdH-ML-cYz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jhs-S3-cBA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KpN-aI-ill">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="892-mG-tFg" kind="relationship" relationship="rootViewController" id="qOo-5c-Zhk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7VD-Fs-rBP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734.7826086956522" y="1737.7232142857142"/>
+        </scene>
+        <!--Duplicates-->
+        <scene sceneID="Reg-Fj-r1l">
+            <objects>
+                <viewController storyboardIdentifier="MergeSelectViewController" id="cbB-KU-Amt" customClass="MergeSelectViewController" customModule="PhoneContacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9gw-3W-E8k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Grl-EF-avI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cay-MK-36T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cay-MK-36T" firstAttribute="trailing" secondItem="Grl-EF-avI" secondAttribute="trailing" id="B94-Av-iiJ"/>
+                            <constraint firstItem="Grl-EF-avI" firstAttribute="top" secondItem="cay-MK-36T" secondAttribute="top" id="Jjl-It-Lbl"/>
+                            <constraint firstItem="cay-MK-36T" firstAttribute="bottom" secondItem="Grl-EF-avI" secondAttribute="bottom" id="Vdk-gb-UV7"/>
+                            <constraint firstItem="Grl-EF-avI" firstAttribute="leading" secondItem="cay-MK-36T" secondAttribute="leading" id="bMN-ik-qiK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Duplicates" id="Mqb-7l-JCD"/>
+                    <connections>
+                        <outlet property="mergeSelectTableView" destination="Grl-EF-avI" id="E78-aZ-lAT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Xu-Gc-HgX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2646.376811594203" y="2454.9107142857142"/>
+        </scene>
+        <!--Merge-->
+        <scene sceneID="WYW-kB-Jcs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g0k-Up-np4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Merge" image="arrow.triangle.merge" catalog="system" id="5mq-aF-aYE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eQX-3O-JiK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PFA-Yk-nTK" kind="relationship" relationship="rootViewController" id="XXB-Eb-bke"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZH2-rO-5gU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2985.507246376812" y="1002.4553571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oMV-Xe-hGx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CmB-JI-nA7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sa0-VD-BmG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GyE-9U-9BN" kind="relationship" relationship="rootViewController" id="vvc-yM-qWw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9di-5D-pNk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2986.9565217391305" y="1717.6339285714284"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="hQe-nS-LE6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sT1-4f-DvM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="More" image="ellipsis" catalog="system" id="KNl-lJ-RmI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1rt-Ak-IfN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hes-op-9yr" kind="relationship" relationship="rootViewController" id="BM8-z4-vS8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SOn-fx-cjw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2939.130434782609" y="-510.26785714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jOX-as-k1A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O8p-LZ-nkr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Crb-KV-2Nd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cbB-KU-Amt" kind="relationship" relationship="rootViewController" id="Qfm-za-YX2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCa-ax-hhM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734.7826086956522" y="2454.9107142857142"/>
+        </scene>
+        <!--Merge Detail-->
+        <scene sceneID="a8R-JG-Ba0">
+            <objects>
+                <viewController storyboardIdentifier="MergeSelectDetailViewController" id="2ci-hp-4Wv" customClass="MergeSelectDetailViewController" customModule="PhoneContacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cxf-4V-tcs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lZu-Wn-yHA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="697"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITC-rV-yfs" customClass="CustomButtonWithRadiusAndShadow" customModule="PhoneContacts" customModuleProvider="target">
+                                <rect key="frame" x="16" y="801" width="382" height="45"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="3Ef-Lv-4Cc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Merge Selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkAccessFunc:" destination="OF5-3V-osa" eventType="touchUpInside" id="mBA-j4-IXf"/>
+                                    <action selector="mergeDetailAction:" destination="2ci-hp-4Wv" eventType="touchUpInside" id="lFQ-GA-hJi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2le-yY-aXo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2le-yY-aXo" firstAttribute="bottom" secondItem="ITC-rV-yfs" secondAttribute="bottom" constant="16" id="8lR-X8-A8T"/>
+                            <constraint firstItem="lZu-Wn-yHA" firstAttribute="leading" secondItem="2le-yY-aXo" secondAttribute="leading" id="NxH-6L-Spe"/>
+                            <constraint firstItem="ITC-rV-yfs" firstAttribute="leading" secondItem="2le-yY-aXo" secondAttribute="leading" constant="16" id="Odp-qR-Dw5"/>
+                            <constraint firstItem="ITC-rV-yfs" firstAttribute="top" secondItem="lZu-Wn-yHA" secondAttribute="bottom" constant="16" id="XKE-Al-tkK"/>
+                            <constraint firstItem="lZu-Wn-yHA" firstAttribute="top" secondItem="2le-yY-aXo" secondAttribute="top" id="oYz-GO-cqF"/>
+                            <constraint firstItem="2le-yY-aXo" firstAttribute="trailing" secondItem="lZu-Wn-yHA" secondAttribute="trailing" id="q7L-J4-1Fd"/>
+                            <constraint firstItem="2le-yY-aXo" firstAttribute="trailing" secondItem="ITC-rV-yfs" secondAttribute="trailing" constant="16" id="r6L-Vt-TD3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Merge Detail" id="aBi-mU-dKA"/>
+                    <connections>
+                        <outlet property="mergeButton" destination="ITC-rV-yfs" id="7jK-km-MMM"/>
+                        <outlet property="mergeDetailTableView" destination="lZu-Wn-yHA" id="X4L-1B-89z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Eu-Uh-X7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2646.376811594203" y="3162.0535714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bEF-uo-Xji">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rld-g6-9RT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vtQ-xQ-wAk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2ci-hp-4Wv" kind="relationship" relationship="rootViewController" id="S0b-ki-roL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gw1-JN-L5P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734.7826086956522" y="3161.3839285714284"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="HpT-lh-t0N">
+            <size key="intrinsicContentSize" width="135" height="34"/>
+        </designable>
+        <designable name="ITC-rV-yfs">
+            <size key="intrinsicContentSize" width="118" height="34"/>
+        </designable>
+    </designables>
+    <color key="tintColor" systemColor="systemGray2Color"/>
+    <resources>
+        <image name="arrow.merge" catalog="system" width="115" height="128"/>
+        <image name="arrow.triangle.merge" catalog="system" width="115" height="128"/>
+        <image name="contacts" width="512" height="512"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
